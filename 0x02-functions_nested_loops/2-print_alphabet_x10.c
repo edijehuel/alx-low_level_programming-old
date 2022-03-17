@@ -4,22 +4,13 @@
  * print_alphabet_x10 - prints alphabet 10 times
  * Return:void
  */
-
-void print_alphabet_x10(void)
+void print_alphabet(void)
 {
 	char c;
-	int i = 0;
 
-	while (i < 10)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		c = 'a';
-		while (c <= 'z')
-		{
-			_putchar(c);
-			c++;
-		}
-		_putchar('\n');
-		i++;
-	}
-
+		_putchar(c);
+	}	
+	_putchar('\n');
 }
